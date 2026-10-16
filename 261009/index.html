@@ -11,6 +11,7 @@
 </head>
 <body>
   <!-- ===== A ヘッダー ここから ===== -->
+
   <header class="box">
     <h1 class="title">まちかどカフェ</h1>
     <ul class="list">
@@ -24,34 +25,185 @@
   <!-- ===== A ヘッダー ここまで ===== -->
 
   <!-- ===== B メイン ここから ===== -->
-  <main class="box">
-    <h2 class="title">おすすめメニュー</h2>
-    <ul class="list">
-      <li class="item">
-        <h3 class="name">ブレンドコーヒー</h3>
-        <p class="text">毎朝お店で焙煎する、香りのいい一杯。</p>
-        <p class="price">¥450</p>
-        <a class="btn" href="#">注文する</a>
+   
+  <main class="main-content">
+    <section class="recommended box" aria-labelledby="recommended-title">
+      <h2 class="title" id="recommended-title">おすすめメニュー</h2>
+      <ul class="list recommended-list">
+        <li class="item">
+          <h3 class="name">アメリカーノ</h3>
+          <p class="text">エスプレッソにお湯を加えた、コーヒーのコクを楽しめる一杯。</p>
+          <p class="price">¥400</p>
+          <a class="btn" href="#americano">メニューを見る</a>
+        </li>
+        <li class="item">
+          <h3 class="name">カフェラテ</h3>
+          <p class="text">なめらかなミルクとエスプレッソが調和する、やさしい味わい。</p>
+          <p class="price">¥580</p>
+          <a class="btn" href="#cafe-latte">メニューを見る</a>
+        </li>
+        <li class="item">
+          <h3 class="name">チョコチップクッキー</h3>
+          <p class="text">ダークチョコレートをたっぷり入れた定番の味。</p>
+          <p class="price">¥250</p>
+          <a class="btn" href="#chocolate-chip-cookie">メニューを見る</a>
+        </li>
+        <li class="item">
+          <h3 class="name">チーズケーキ</h3>
+          <p class="text">しっとり濃厚な、店長の自信作。</p>
+          <p class="price">¥480</p>
+          <a class="btn" href="#cheesecake">メニューを見る</a>
       </li>
-      <li class="item">
-        <h3 class="name">カフェラテ</h3>
-        <p class="text">ミルクたっぷりの、やさしい味。</p>
-        <p class="price">¥520</p>
-        <a class="btn" href="#">注文する</a>
-      </li>
-      <li class="item">
-        <h3 class="name">チーズケーキ</h3>
-        <p class="text">しっとり濃厚な、店長の自信作。</p>
-        <p class="price">¥480</p>
-        <a class="btn" href="#">注文する</a>
-      </li>
-    </ul>
+      </ul>
+    </section>
+
+
+    <section id="menu" class="section section-menu">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">バリスタおすすめ</span>
+          <h2>コーヒーメニュー</h2>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" id="americano">
+            <h3>アメリカーノ</h3>
+            <span class="price">¥400</span>
+            <p>エスプレッソにお湯を加えた、コーヒーのコクを楽しめる一杯。</p>
+          </article>
+          <article class="menu-card">
+            <h3>カプチーノ</h3>
+            <span class="price">¥550</span>
+            <p>エスプレッソとスチームミルク、ふんわり泡のバランスが絶妙です。</p>
+          </article>
+          <article class="menu-card" id="cafe-latte">
+            <h3>カフェラテ</h3>
+            <span class="price">¥580</span>
+            <p>なめらかなミルクとエスプレッソが調和する、やさしい味わい。</p>
+          </article>
+          <article class="menu-card">
+            <h3>フラットホワイト</h3>
+            <span class="price">¥550</span>
+            <p>きめ細かなミルクフォームで、エスプレッソの風味を引き立てました。</p>
+          </article>
+          <article class="menu-card">
+            <h3>キャラメルマキアート</h3>
+            <span class="price">¥650</span>
+            <p>バニラの香りとミルクに、キャラメルソースをたっぷり添えて。</p>
+          </article>
+          <article class="menu-card">
+            <h3>カフェモカ</h3>
+            <span class="price">¥600</span>
+            <p>エスプレッソとココア、ミルクを合わせたチョコレート好きの一杯。</p>
+          </article>
+          <article class="menu-card">
+            <h3>水出しアイスコーヒー</h3>
+            <span class="price">¥450</span>
+            <p>18時間かけてじっくり抽出した、すっきりまろやかな味わい。</p>
+          </article>
+          <article class="menu-card">
+            <h3>アフォガート</h3>
+            <span class="price">¥700</span>
+            <p>バニラジェラートに、淹れたてのエスプレッソをかけて。</p>
+          </article>
+        </div>
+
+        <div class="menu-category">
+          <div class="section-heading">
+            <span class="eyebrow">コーヒーのおともに</span>
+            <h2>クッキーと焼き菓子</h2>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card" id="chocolate-chip-cookie">
+              <h3>チョコチップクッキー</h3>
+              <span class="price">¥250</span>
+              <p>ダークチョコレートをたっぷり入れた定番の味。</p>
+            </article>
+            <article class="menu-card">
+              <h3>ダブルチョコレートとくるみ</h3>
+              <span class="price">¥280</span>
+              <p>濃厚なココア生地に、香ばしいくるみを合わせました。</p>
+            </article>
+            <article class="menu-card">
+              <h3>クランベリーとホワイトチョコ</h3>
+              <span class="price">¥300</span>
+              <p>甘酸っぱいクランベリーと、まろやかなホワイトチョコの組み合わせ。</p>
+            </article>
+            <article class="menu-card">
+              <h3>塩キャラメルクッキー</h3>
+              <span class="price">¥300</span>
+              <p>とろけるキャラメルを包んだ、ほんのり塩味のソフトクッキー。</p>
+            </article>
+            <article class="menu-card">
+              <h3>オートミールレーズンクッキー</h3>
+              <span class="price">¥250</span>
+              <p>オートミールとレーズンに、シナモンの香りを添えました。</p>
+            </article>
+            <article class="menu-card">
+              <h3>抹茶ホワイトチョコクッキー</h3>
+              <span class="price">¥350</span>
+              <p>香り豊かな抹茶と、やさしい甘さのホワイトチョコ。</p>
+            </article>
+            <article class="menu-card">
+              <h3>ピーナッツバタークッキー</h3>
+              <span class="price">¥280</span>
+              <p>ピーナッツバターのコクと、ほどよい塩味が楽しめます。</p>
+            </article>
+            <article class="menu-card">
+              <h3>アーモンドビスコッティ</h3>
+              <span class="price">¥300</span>
+              <p>香ばしく二度焼きした、コーヒーによく合う焼き菓子。</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <div class="section-heading">
+            <span class="eyebrow">手作りケーキ</span>
+            <h2>ケーキメニュー</h2>
+          </div>
+          <div class="menu-grid">
+            <article class="menu-card" id="cheesecake">
+              <h3>チーズケーキ</h3>
+              <span class="price">¥480</span>
+              <p>しっとり濃厚な、店長の自信作。</p>
+            </article>
+            <article class="menu-card">
+              <h3>ガトーショコラ</h3>
+              <span class="price">¥520</span>
+              <p>カカオの香り豊かな、しっとり濃厚なチョコレートケーキ。</p>
+            </article>
+            <article class="menu-card">
+              <h3>いちごのショートケーキ</h3>
+              <span class="price">¥580</span>
+              <p>ふわふわのスポンジに、苺と軽い口どけの生クリームを重ねました。</p>
+            </article>
+            <article class="menu-card">
+              <h3>モンブラン</h3>
+              <span class="price">¥600</span>
+              <p>香り豊かな栗クリームをたっぷり絞った人気のケーキ。</p>
+            </article>
+            <article class="menu-card">
+              <h3>抹茶ロールケーキ</h3>
+              <span class="price">¥500</span>
+              <p>ほろ苦い抹茶生地で、まろやかなクリームを包みました。</p>
+            </article>
+            <article class="menu-card">
+              <h3>季節のフルーツタルト</h3>
+              <span class="price">¥620</span>
+              <p>旬の果物とサクサクのタルト生地を楽しめる季節限定の一品。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ===== B メイン ここまで ===== -->
 
   <!-- ===== C フッター ここから ===== -->
-  <footer class="box">
+
+    <footer class="box">
     <p class="title">まちかどカフェ</p>
     <ul class="list">
       <li>営業時間8:00〜20:00</li>
